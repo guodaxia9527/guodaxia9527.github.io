@@ -5,17 +5,17 @@
   
 
   
-  <title>Hexo</title>
+  <title>锅大侠的烂笔头</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="锅大侠的烂笔头">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="锅大侠的烂笔头">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="锅大侠">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="锅大侠的烂笔头" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -36,7 +36,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">锅大侠的烂笔头</a>
       </h1>
       
     </div>
@@ -143,15 +143,20 @@
 <p>然后命令行进入想要存放的目录，使用如下命令安装hexo，并启动服务。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200213130301003.png" alt="image-20200213130301003"></p>
-<p><a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p>
-<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200213131024966.png" alt="image-20200213131024966"></p>
+<p><img src="https://i.loli.net/2020/02/14/zOX7NbF9l2ufn3H.png" alt="image-20200213130301003.png"><br><a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p>
+<p><img src="https://i.loli.net/2020/02/14/WrlnCiEeq2kQKyu.png" alt="image-20200213131024966.png"></p>
 <h2 id="写一篇文章"><a href="#写一篇文章" class="headerlink" title="写一篇文章"></a>写一篇文章</h2><p>文章存放目录：*\blog\source_posts</p>
-<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200213131450983.png" alt="image-20200213131450983"></p>
-<p>新建一个markdown文件，如<code>2020-2-13使用Hexo创建Blog.md</code>。</p>
-<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200213135013385.png" alt="image-20200213135013385"></p>
-<p>刷新网页</p>
-<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200213135434949.png" alt="image-20200213135434949"></p>
+<p><img src="https://i.loli.net/2020/02/14/RwbtS1gMKnmu8xV.png" alt="image-20200213131450983.png"><br>新建一个markdown文件，如<code>2020-2-13使用Hexo创建Blog.md</code>。</p>
+<p><img src="https://i.loli.net/2020/02/14/bxFTE9zLiWK81aQ.png" alt="image-20200213135013385.png"><br>刷新网页</p>
+<p><img src="https://i.loli.net/2020/02/14/1T9FVxPWB4bXmzp.png" alt="image-20200213135434949.png"></p>
+<h2 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h2><p>blog目录下，使用如下命令生成静态页面。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2020/02/14/zejWMSC821RfHtI.png" alt="image-20200213140641433.png"></p>
+<h2 id="上传网页到github"><a href="#上传网页到github" class="headerlink" title="上传网页到github"></a>上传网页到github</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> public</span><br><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"blog doc"</span></span><br><span class="line">git remote add origin https://github.com/guodaxia9527/text_check.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2020/02/14/XA46DhKGv2B8um7.png" alt="image-20200213144458507.png"></p>
+<p><a href="https://guodaxia9527.github.io/text_check/" target="_blank" rel="noopener">https://guodaxia9527.github.io/text_check/</a></p>
 
       
     </div>
@@ -216,7 +221,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2020 John Doe<br>
+      &copy; 2020 锅大侠<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
